@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C4EC767F5EFF8FB757AE310 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A3A9DB4249DCBC060E5DDB /* ModelIO.framework */; };
+		989F0D7165707B0FCB34D001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7CB82C91696FD3776A323 /* ContentView.swift */; };
+		B3EB42814636CDA474FFDA6F /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76220D5678066A5B08F03D43 /* QuickLook.framework */; };
+		C6EA6D1DF6DF728A6A5A91BC /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DC4B7B5D7A2F14054912C4 /* SceneKit.framework */; };
+		ED1938C473202887D366A3FC /* Inventory2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FE5A239438783132900E0 /* Inventory2App.swift */; };
+		F2EEBD9774B64DC1D1E1934F /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = DF302122A7562BAB603D9735 /* GLTFSceneKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24E858ED2CCA2C5F00CC1153 /* drink.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = drink.glb; sourceTree = "<group>"; };
+		329D5C3C9223B447810E51BD /* Inventory2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76220D5678066A5B08F03D43 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		B7DC4B7B5D7A2F14054912C4 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		C0A3A9DB4249DCBC060E5DDB /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		C3D7CB82C91696FD3776A323 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D08FE5A239438783132900E0 /* Inventory2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory2App.swift; sourceTree = "<group>"; };
+		FFB822D1B14F3ED84B804C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17860758E4EE209802E6898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EA6D1DF6DF728A6A5A91BC /* SceneKit.framework in Frameworks */,
+				B3EB42814636CDA474FFDA6F /* QuickLook.framework in Frameworks */,
+				6C4EC767F5EFF8FB757AE310 /* ModelIO.framework in Frameworks */,
+				F2EEBD9774B64DC1D1E1934F /* GLTFSceneKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24AC47962CCA2A9C00A796E6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				24E858ED2CCA2C5F00CC1153 /* drink.glb */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		87769C9DD5D2FC23DBF46296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A3A9DB4249DCBC060E5DDB /* ModelIO.framework */,
+				76220D5678066A5B08F03D43 /* QuickLook.framework */,
+				B7DC4B7B5D7A2F14054912C4 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90EBE804EF9B8D295C7E1119 /* Inventory2 */ = {
+			isa = PBXGroup;
+			children = (
+				24AC47962CCA2A9C00A796E6 /* models */,
+				C3D7CB82C91696FD3776A323 /* ContentView.swift */,
+				FFB822D1B14F3ED84B804C43 /* Info.plist */,
+				D08FE5A239438783132900E0 /* Inventory2App.swift */,
+			);
+			path = Inventory2;
+			sourceTree = "<group>";
+		};
+		A9079BCD9A61AEE30525BDB4 = {
+			isa = PBXGroup;
+			children = (
+				90EBE804EF9B8D295C7E1119 /* Inventory2 */,
+				87769C9DD5D2FC23DBF46296 /* Frameworks */,
+				D9AF9D321AEFDC66E6F9E7C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9AF9D321AEFDC66E6F9E7C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				329D5C3C9223B447810E51BD /* Inventory2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA657C44B798AB53801D2AF2 /* Inventory2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C876231B2B728FC21B8A63FF /* Build configuration list for PBXNativeTarget "Inventory2" */;
+			buildPhases = (
+				E91C048544BE0E88C2EC9DBD /* Sources */,
+				17860758E4EE209802E6898A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Inventory2;
+			packageProductDependencies = (
+				DF302122A7562BAB603D9735 /* GLTFSceneKit */,
+			);
+			productName = Inventory2;
+			productReference = 329D5C3C9223B447810E51BD /* Inventory2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD1DCEE138DBFD71AEAEDD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1400;
+			};
+			buildConfigurationList = A69304C53839B451F7333D05 /* Build configuration list for PBXProject "Inventory2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A9079BCD9A61AEE30525BDB4;
+			packageReferences = (
+				8A393471106499056142CF1A /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA657C44B798AB53801D2AF2 /* Inventory2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91C048544BE0E88C2EC9DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989F0D7165707B0FCB34D001 /* ContentView.swift in Sources */,
+				ED1938C473202887D366A3FC /* Inventory2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7CDBDB4D527622B4A6AA5B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q839XJNV5T;
+				ENABLE_PREVIEWS = YES;
+				EXECUTABLE_NAME = Inventory2;
+				INFOPLIST_FILE = Inventory2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = Inventory2;
+				PRODUCT_NAME = Inventory2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		967575BF8609F52F20B56036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylo.inventory2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		999E0338253D81C8E8C77B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylo.inventory2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A2FE4B9986F50C9D27CF229F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q839XJNV5T;
+				ENABLE_PREVIEWS = YES;
+				EXECUTABLE_NAME = Inventory2;
+				INFOPLIST_FILE = Inventory2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = Inventory2;
+				PRODUCT_NAME = Inventory2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A69304C53839B451F7333D05 /* Build configuration list for PBXProject "Inventory2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999E0338253D81C8E8C77B9F /* Debug */,
+				967575BF8609F52F20B56036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C876231B2B728FC21B8A63FF /* Build configuration list for PBXNativeTarget "Inventory2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2FE4B9986F50C9D27CF229F /* Debug */,
+				7CDBDB4D527622B4A6AA5B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A393471106499056142CF1A /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
+			requirement = {
+				kind = exactVersion;
+				version = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF302122A7562BAB603D9735 /* GLTFSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A393471106499056142CF1A /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
+			productName = GLTFSceneKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FCD1DCEE138DBFD71AEAEDD0 /* Project object */;
+}
