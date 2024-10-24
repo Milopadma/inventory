@@ -1,0 +1,54 @@
+name: Inventory2
+options:
+  bundleIdPrefix: com.mylo
+  deploymentTarget:
+    iOS: 15.0
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: "" # add your team ID here
+    PRODUCT_BUNDLE_IDENTIFIER: com.mylo.inventory2
+    SWIFT_VERSION: 5.0
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+    GENERATE_INFOPLIST_FILE: YES
+
+targets:
+  Inventory2:
+    type: application
+    platform: iOS
+    sources:
+      - path: Inventory2
+    settings:
+      base:
+        INFOPLIST_FILE: Inventory2/Info.plist
+        PRODUCT_NAME: Inventory2
+        TARGETED_DEVICE_FAMILY: 1
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
+        EXECUTABLE_NAME: Inventory2
+        PRODUCT_MODULE_NAME: Inventory2
+        SKIP_INSTALL: NO
+        INSTALL_PATH: $(LOCAL_APPS_DIR)
+    info:
+      path: Inventory2/Info.plist
+      properties:
+        CFBundleName: Inventory2
+        CFBundleDisplayName: Inventory2
+        CFBundleIdentifier: com.mylo.inventory2
+        CFBundleExecutable: Inventory2
+        CFBundlePackageType: APPL
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        LSRequiresIPhoneOS: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    dependencies:
+      - sdk: SceneKit.framework
+      - sdk: QuickLook.framework
+      - sdk: ModelIO.framework
+    preBuildScripts: []
+    postBuildScripts: []

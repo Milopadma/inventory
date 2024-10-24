@@ -1,0 +1,14 @@
+iOS Project Setup Steps with XcodeGen
+
+1. Directory Structure
+---------------------
+Create project directory:
+/Inventory2
+  /Inventory2
+    ContentView.swift
+    Inventory2App.swift
+  project.yml
+
+2. Base Files
+------------
+project.yml:
